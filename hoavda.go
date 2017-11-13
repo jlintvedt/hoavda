@@ -12,7 +12,7 @@ func main() {
 	// n := bargi.NewNode()
 	// n.Test()
 
-	path, err := filepath.Abs("..\\testdata")
+	path, err := filepath.Abs("testdata")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -21,4 +21,5 @@ func main() {
 		log.Fatal(err)
 	}
 	sn.Test()
+	log.Info("Execution Done")
 }
